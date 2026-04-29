@@ -35,6 +35,7 @@
             this.btnPgEditar = new System.Windows.Forms.Button();
             this.btnPgCadastro = new System.Windows.Forms.Button();
             this.tabPage2Novo = new System.Windows.Forms.TabPage();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnPgRelatorios1 = new System.Windows.Forms.Button();
             this.btnPgInicio = new System.Windows.Forms.Button();
             this.btnAdicionarComunidade = new System.Windows.Forms.Button();
@@ -77,7 +78,6 @@
             this.rbFiltroPorMes = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.btnPgInicioRelatorio = new System.Windows.Forms.Button();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.TabPage1Inicial.SuspendLayout();
             this.tabPage2Novo.SuspendLayout();
@@ -179,6 +179,14 @@
             this.tabPage2Novo.TabIndex = 1;
             this.tabPage2Novo.Text = "Novo Cadastro";
             this.tabPage2Novo.UseVisualStyleBackColor = true;
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Enabled = false;
+            this.txtCodigo.Location = new System.Drawing.Point(271, 26);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.TabIndex = 34;
             // 
             // btnPgRelatorios1
             // 
@@ -620,14 +628,6 @@
             this.btnPgInicioRelatorio.Text = "Início";
             this.btnPgInicioRelatorio.UseVisualStyleBackColor = true;
             this.btnPgInicioRelatorio.Click += new System.EventHandler(this.btnPgInicio_Click);
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(271, 26);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigo.TabIndex = 34;
             // 
             // Form1
             // 

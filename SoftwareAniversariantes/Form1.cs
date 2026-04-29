@@ -817,8 +817,11 @@ ORDER BY CAST(strftime('%d', data_nascimento) AS INTEGER), nome";
             SetFieldsStatus(false);
             //btnNovoCadastroReset.Visible = true;
             btnNovoCadastro.Visible = true;
+            btnEditarCadastro.Visible = true;
+
+
         }
 
-        
+
     }
 }
