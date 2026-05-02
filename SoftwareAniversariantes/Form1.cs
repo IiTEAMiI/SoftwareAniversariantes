@@ -18,6 +18,8 @@ namespace SoftwareAniversariantes
     public partial class Form1 : Form
     {
         private readonly string _dbPath = System.IO.Path.Combine(Application.StartupPath, "bancodedados.db");
+        private object dvgRelatorio;
+
         private string DbConnectionString => "Data Source=" + _dbPath + ";Version=3;";
 
         public Form1()
@@ -596,11 +598,17 @@ private void AplicarFiltroRelatorio(bool mostrarResumo)
  dgvRelatorio.Columns.Clear();
  dgvRelatorio.Rows.Clear();
 
- dgvRelatorio.Columns.Add("colNome", "Nome");
- dgvRelatorio.Columns.Add("colDia", "Dia");
- dgvRelatorio.Columns.Add("colComunidade", "Comunidade");
 
- bool porMes = rbFiltroPorMes.Checked;
+dgvRelatorio.Columns.Add("colNome", "Nome");
+dgvRelatorio.Columns.Add("colDia", "Dia");
+dgvRelatorio.Columns.Add("colComunidade", "Comunidade");
+dgvRelatorio.Columns.Add("colId", "Id");
+dgvRelatorio.Columns["colId"].Visible = false;
+
+
+
+
+            bool porMes = rbFiltroPorMes.Checked;
  int mesNumero;
  int? diaFiltro = null;
  string mesRotuloLista;
